@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "empower_website/build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
