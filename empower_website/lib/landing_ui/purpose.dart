@@ -36,6 +36,13 @@ class _PurposeState extends State<Purpose> {
                     Text(
                       'OUR\nPURPOSE',
                       style: GoogleFonts.barlow(
+                        shadows: [
+                          Shadow(
+                            blurRadius: 6,
+                            color: Colors.black12,
+                            offset: Offset(0, 3),
+                          ),
+                        ],
                         fontSize: ResponsiveWidget.isLargeScreen(context) ? 80 : 60,
                         color: Colors.white,
                         fontWeight: FontWeight.w800,
@@ -84,6 +91,13 @@ class _PurposeState extends State<Purpose> {
                     Text(
                       '&',
                       style: GoogleFonts.barlow(
+                        shadows: [
+                          Shadow(
+                            blurRadius: 6,
+                            color: Colors.black12,
+                            offset: Offset(0, 3),
+                          ),
+                        ],
                         fontSize: ResponsiveWidget.isMediumScreen(context) ? 200 : 300,
                         fontWeight: FontWeight.w900,
                         color: Colors.white,
@@ -107,6 +121,13 @@ class _PurposeState extends State<Purpose> {
                       'OUR\nVISION',
                       textAlign: TextAlign.end,
                       style: GoogleFonts.barlow(
+                        shadows: [
+                          Shadow(
+                            blurRadius: 6,
+                            color: Colors.black12,
+                            offset: Offset(0, 3),
+                          ),
+                        ],
                         fontSize: ResponsiveWidget.isLargeScreen(context) ? 80 : 60,
                         color: Colors.white,
                         fontWeight: FontWeight.w800,

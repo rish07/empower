@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
 
-import 'constants.dart';
+import '../constants.dart';
 
 class HomePage extends StatefulWidget {
   @override

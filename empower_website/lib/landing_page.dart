@@ -1,7 +1,9 @@
-import 'package:empower/event_flow.dart';
-import 'package:empower/event_theme.dart';
-import 'package:empower/home_page.dart';
-import 'package:empower/purpose.dart';
+import 'package:empower/landing_ui/about_us.dart';
+import 'package:empower/landing_ui/contact_us.dart';
+import 'package:empower/landing_ui/event_flow.dart';
+import 'package:empower/landing_ui/event_theme.dart';
+import 'package:empower/landing_ui/home_page.dart';
+import 'package:empower/landing_ui/purpose.dart';
 import 'package:empower/responsive_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
@@ -89,51 +91,63 @@ class _LandingPageState extends State<LandingPage> {
                   buildAppBarMenu(
                     context,
                     title: 'ABOUT US',
-                    onPress: () {
+                    onPress: () async {
                       setState(() {
                         index = 3;
                       });
+                      await controller.animateToPage(
+                        4,
+                        duration: Duration(milliseconds: 500),
+                        curve: Curves.easeInSine,
+                      );
                     },
                     number: 3,
                   ),
                   buildAppBarMenu(
                     context,
                     title: 'CONTACT US',
-                    onPress: () {
+                    onPress: () async {
                       setState(() {
                         index = 4;
                       });
+                      await controller.animateToPage(
+                        5,
+                        duration: Duration(milliseconds: 500),
+                        curve: Curves.easeInSine,
+                      );
                     },
                     number: 4,
                   ),
                 ],
               ),
-              // Padding(
-              //   padding: EdgeInsets.symmetric(
-              //       horizontal: ResponsiveWidget.isMediumScreen(context)
-              //           ? 32.0
-              //           : ResponsiveWidget.isLargeScreen(context)
-              //               ? 64
-              //               : 0),
-              //   child: Image.asset(
-              //     'logo.gif',
-              //     fit: BoxFit.contain,
-              //     height: ResponsiveWidget.isMediumScreen(context)
-              //         ? 100
-              //         : ResponsiveWidget.isLargeScreen(context)
-              //             ? 150
-              //             : 0,
-              //     width: ResponsiveWidget.isMediumScreen(context)
-              //         ? 100
-              //         : ResponsiveWidget.isLargeScreen(context)
-              //             ? 150
-              //             : 0,
-              //   ),
-              // ),
+              Padding(
+                padding: EdgeInsets.symmetric(
+                    horizontal: ResponsiveWidget.isMediumScreen(context)
+                        ? 50.0
+                        : ResponsiveWidget.isLargeScreen(context)
+                            ? 80
+                            : 0),
+                child: Image.asset(
+                  'logo.gif',
+                  fit: BoxFit.contain,
+                  height: ResponsiveWidget.isMediumScreen(context)
+                      ? 150
+                      : ResponsiveWidget.isLargeScreen(context)
+                          ? 200
+                          : 0,
+                  width: ResponsiveWidget.isMediumScreen(context)
+                      ? 150
+                      : ResponsiveWidget.isLargeScreen(context)
+                          ? 200
+                          : 0,
+                ),
+              ),
             ]),
             EventTheme(),
             EventFlow(),
             Purpose(),
+            AboutUs(),
+            ContactUs(),
           ],
         ),
       ),
