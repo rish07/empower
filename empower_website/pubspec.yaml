@@ -31,7 +31,7 @@ dependencies:
   google_fonts: ^1.1.0
   auto_size_text: ^2.1.0
   scroll_to_index: ^1.0.6
-
+  timeline_tile: ^1.0.0
 
 
 dev_dependencies:

@@ -1,3 +1,4 @@
+import 'package:empower/event_flow.dart';
 import 'package:empower/event_theme.dart';
 import 'package:empower/home_page.dart';
 import 'package:empower/responsive_widget.dart';
@@ -101,8 +102,31 @@ class _LandingPageState extends State<LandingPage> {
                   ),
                 ],
               ),
+              // Padding(
+              //   padding: EdgeInsets.symmetric(
+              //       horizontal: ResponsiveWidget.isMediumScreen(context)
+              //           ? 32.0
+              //           : ResponsiveWidget.isLargeScreen(context)
+              //               ? 64
+              //               : 0),
+              //   child: Image.asset(
+              //     'logo.gif',
+              //     fit: BoxFit.contain,
+              //     height: ResponsiveWidget.isMediumScreen(context)
+              //         ? 100
+              //         : ResponsiveWidget.isLargeScreen(context)
+              //             ? 150
+              //             : 0,
+              //     width: ResponsiveWidget.isMediumScreen(context)
+              //         ? 100
+              //         : ResponsiveWidget.isLargeScreen(context)
+              //             ? 150
+              //             : 0,
+              //   ),
+              // ),
             ]),
             EventTheme(),
+            EventFlow(),
           ],
         ),
       ),
