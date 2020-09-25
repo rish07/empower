@@ -28,7 +28,7 @@ class _EventThemeState extends State<EventTheme> {
             ),
           ),
           Container(
-            padding: EdgeInsets.symmetric(horizontal: 16, vertical: 32),
+            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 32),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [

@@ -1,6 +1,7 @@
 import 'package:empower/event_flow.dart';
 import 'package:empower/event_theme.dart';
 import 'package:empower/home_page.dart';
+import 'package:empower/purpose.dart';
 import 'package:empower/responsive_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
@@ -73,10 +74,15 @@ class _LandingPageState extends State<LandingPage> {
                   buildAppBarMenu(
                     context,
                     title: 'OUR PURPOSE',
-                    onPress: () {
+                    onPress: () async {
                       setState(() {
-                        index = 2;
+                        index = 3;
                       });
+                      await controller.animateToPage(
+                        3,
+                        duration: Duration(milliseconds: 500),
+                        curve: Curves.easeInSine,
+                      );
                     },
                     number: 2,
                   ),
@@ -127,6 +133,7 @@ class _LandingPageState extends State<LandingPage> {
             ]),
             EventTheme(),
             EventFlow(),
+            Purpose(),
           ],
         ),
       ),
