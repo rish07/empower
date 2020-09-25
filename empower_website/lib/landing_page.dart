@@ -1,11 +1,12 @@
-import 'dart:html';
-
-import 'package:auto_size_text/auto_size_text.dart';
-import 'package:empower/constants.dart';
+import 'package:empower/event_theme.dart';
+import 'package:empower/home_page.dart';
 import 'package:empower/responsive_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:scroll_to_index/scroll_to_index.dart';
+
+import 'constants.dart';
 
 class LandingPage extends StatefulWidget {
   @override
@@ -13,247 +14,102 @@ class LandingPage extends StatefulWidget {
 }
 
 class _LandingPageState extends State<LandingPage> {
+  var controller = PageController();
+  final scrollDirection = Axis.vertical;
+  int index = 0;
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       body: Container(
-        padding: EdgeInsets.symmetric(horizontal: 16),
-        child: ListView(
+        child: PageView(
+          onPageChanged: (int ind) {
+            setState(() {
+              index = ind;
+            });
+          },
+          pageSnapping: false,
+          scrollDirection: scrollDirection,
+          controller: controller,
           children: [
-            Stack(
-              children: [
-                Image.asset('bg1.png'),
-                Column(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    AppBar(
-                      backgroundColor: Colors.transparent,
-                      elevation: 0,
-                      actions: [
-                        buildAppBarMenu(
-                          context,
-                          title: 'HOME',
-                          onPress: () {},
-                          isActive: true,
-                        ),
-                        buildAppBarMenu(
-                          context,
-                          title: 'EVENT THEME',
-                          onPress: () {},
-                          isActive: false,
-                        ),
-                        buildAppBarMenu(
-                          context,
-                          title: 'OUR PURPOSE',
-                          onPress: () {},
-                          isActive: false,
-                        ),
-                        buildAppBarMenu(
-                          context,
-                          title: 'ABOUT US',
-                          onPress: () {},
-                          isActive: false,
-                        ),
-                        buildAppBarMenu(
-                          context,
-                          title: 'CONTACT US',
-                          onPress: () {},
-                          isActive: false,
-                        ),
-                      ],
-                    ),
-                    SizedBox(
-                      height: !ResponsiveWidget.isLargeScreen(context) ? size.height * 0.18 : size.height * 0.1,
-                    ),
-                    AutoSizeText(
-                      'EMPOWER',
-                      maxLines: 1,
-                      textAlign: TextAlign.center,
-                      style: GoogleFonts.barlow(
-                          fontWeight: FontWeight.w900,
-                          color: huesYellow,
-                          letterSpacing: 5,
-                          fontSize: ResponsiveWidget.isLargeScreen(context)
-                              ? 200
-                              : (ResponsiveWidget.isMediumScreen(context))
-                                  ? 150
-                                  : 60),
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(
-                          'WHERE ',
-                          maxLines: 1,
-                          textAlign: TextAlign.center,
-                          style: GoogleFonts.barlow(
-                              fontWeight: FontWeight.bold,
-                              color: Colors.black,
-                              fontSize: ResponsiveWidget.isLargeScreen(context)
-                                  ? 75
-                                  : (ResponsiveWidget.isMediumScreen(context))
-                                      ? 50
-                                      : 30),
-                        ),
-                        Text(
-                          'EMPATHY ',
-                          maxLines: 1,
-                          textAlign: TextAlign.center,
-                          style: GoogleFonts.barlow(
-                              fontWeight: FontWeight.bold,
-                              color: huesYellow,
-                              fontSize: ResponsiveWidget.isLargeScreen(context)
-                                  ? 75
-                                  : (ResponsiveWidget.isMediumScreen(context))
-                                      ? 50
-                                      : 30),
-                        ),
-                        Text(
-                          'IS YOUR ',
-                          maxLines: 1,
-                          textAlign: TextAlign.center,
-                          style: GoogleFonts.barlow(
-                              fontWeight: FontWeight.bold,
-                              color: Colors.black,
-                              fontSize: ResponsiveWidget.isLargeScreen(context)
-                                  ? 75
-                                  : (ResponsiveWidget.isMediumScreen(context))
-                                      ? 50
-                                      : 30),
-                        ),
-                        Text(
-                          'POWER',
-                          maxLines: 1,
-                          textAlign: TextAlign.center,
-                          style: GoogleFonts.barlow(
-                              fontWeight: FontWeight.bold,
-                              color: huesYellow,
-                              fontSize: ResponsiveWidget.isLargeScreen(context)
-                                  ? 75
-                                  : (ResponsiveWidget.isMediumScreen(context))
-                                      ? 50
-                                      : 30),
-                        ),
-                      ],
-                    ),
-                    SizedBox(
-                      height: size.height * 0.08,
-                    ),
-                    AutoSizeText(
-                      'Come join us for our biggest \nevent till date!',
-                      textAlign: TextAlign.center,
-                      style: GoogleFonts.gochiHand(
-                          fontWeight: FontWeight.normal,
-                          color: Colors.black,
-                          letterSpacing: 5,
-                          fontSize: ResponsiveWidget.isLargeScreen(context)
-                              ? 68
-                              : (ResponsiveWidget.isMediumScreen(context))
-                                  ? 42
-                                  : 20),
-                    ),
-                    Container(
-                      padding: EdgeInsets.symmetric(
-                          vertical: !ResponsiveWidget.isLargeScreen(context) ? size.height * 0.1 : size.height * 0.06,
-                          horizontal: ResponsiveWidget.isMediumScreen(context)
-                              ? size.width * 0.1
-                              : (ResponsiveWidget.isLargeScreen(context))
-                                  ? size.width * 0.12
-                                  : 0),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Column(
-                            children: [
-                              GestureDetector(
-                                onTap: () {},
-                                child: Container(
-                                  padding: EdgeInsets.all(8),
-                                  height: 43,
-                                  width: 43,
-                                  child: Image.asset('web/assets/insta.png'),
-                                ),
-                              ),
-                              GestureDetector(
-                                onTap: () {},
-                                child: Container(
-                                  padding: EdgeInsets.all(8),
-                                  height: 43,
-                                  width: 43,
-                                  child: Image.asset('web/assets/link.png'),
-                                ),
-                              ),
-                              GestureDetector(
-                                onTap: () {},
-                                child: Container(
-                                  padding: EdgeInsets.all(8),
-                                  height: 43,
-                                  width: 43,
-                                  child: Image.asset('web/assets/twitter.png'),
-                                ),
-                              ),
-                            ],
-                          ),
-                          SizedBox(
-                            width: ResponsiveWidget.isMediumScreen(context) ? size.width * 0.05 : 90,
-                          ),
-                          MaterialButton(
-                            onPressed: () {},
-                            color: huesYellow,
-                            child: Container(
-                              child: AutoSizeText(
-                                'Take me there',
-                                maxLines: 1,
-                                overflow: TextOverflow.ellipsis,
-                                style: GoogleFonts.gochiHand(
-                                  color: Colors.white,
-                                  fontSize: ResponsiveWidget.isLargeScreen(context) ? 35 : 30,
-                                ),
-                              ),
-                            ),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(5),
-                            ),
-                          ),
-                          SizedBox(
-                            width: 0,
-                          ),
-                          Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            crossAxisAlignment: CrossAxisAlignment.end,
-                            children: [
-                              Text(
-                                '10-11th',
-                                style: GoogleFonts.barlow(
-                                  fontSize: ResponsiveWidget.isMediumScreen(context) ? 60 : 70,
-                                  color: huesYellow,
-                                  fontWeight: FontWeight.w800,
-                                ),
-                              ),
-                              Text(
-                                'October',
-                                style: GoogleFonts.barlow(
-                                  fontSize: ResponsiveWidget.isMediumScreen(context) ? 30 : 40,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                            ],
-                          )
-                        ],
-                      ),
-                    )
-                  ],
-                ),
-              ],
-            ),
+            Stack(children: [
+              HomePage(),
+              AppBar(
+                backgroundColor: Colors.transparent,
+                elevation: 0,
+                actions: [
+                  buildAppBarMenu(
+                    context,
+                    title: 'HOME',
+                    onPress: () {
+                      setState(() {
+                        index = 0;
+                      });
+                    },
+                    number: 0,
+                  ),
+                  buildAppBarMenu(
+                    context,
+                    title: 'EVENT THEME',
+                    onPress: () async {
+                      setState(() {
+                        index = 1;
+                      });
+                      await controller.animateToPage(
+                        1,
+                        duration: Duration(milliseconds: 500),
+                        curve: Curves.easeInSine,
+                      );
+                    },
+                    number: 1,
+                  ),
+                  buildAppBarMenu(
+                    context,
+                    title: 'OUR PURPOSE',
+                    onPress: () {
+                      setState(() {
+                        index = 2;
+                      });
+                    },
+                    number: 2,
+                  ),
+                  buildAppBarMenu(
+                    context,
+                    title: 'ABOUT US',
+                    onPress: () {
+                      setState(() {
+                        index = 3;
+                      });
+                    },
+                    number: 3,
+                  ),
+                  buildAppBarMenu(
+                    context,
+                    title: 'CONTACT US',
+                    onPress: () {
+                      setState(() {
+                        index = 4;
+                      });
+                    },
+                    number: 4,
+                  ),
+                ],
+              ),
+            ]),
+            EventTheme(),
           ],
         ),
       ),
     );
   }
 
-  Padding buildAppBarMenu(BuildContext context, {String title, Function onPress, bool isActive}) {
+  Padding buildAppBarMenu(BuildContext context, {String title, Function onPress, int number}) {
     return Padding(
       padding: EdgeInsets.only(
           top: 16,
@@ -267,9 +123,9 @@ class _LandingPageState extends State<LandingPage> {
         child: Text(
           title,
           style: GoogleFonts.barlow(
-            color: isActive ? huesYellow : Colors.black,
-            fontWeight: isActive ? FontWeight.bold : FontWeight.w500,
-            fontSize: isActive
+            color: index == number ? huesYellow : Colors.black,
+            fontWeight: index == number ? FontWeight.bold : FontWeight.w500,
+            fontSize: index == number
                 ? (ResponsiveWidget.isLargeScreen(context)
                     ? 35
                     : (ResponsiveWidget.isMediumScreen(context))
