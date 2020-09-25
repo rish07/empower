@@ -25,7 +25,7 @@ class _PurposeState extends State<Purpose> {
             ),
           ),
           Container(
-            padding: EdgeInsets.symmetric(horizontal: ResponsiveWidget.isMediumScreen(context) ? 32 : 64, vertical: 32),
+            padding: EdgeInsets.symmetric(horizontal: ResponsiveWidget.isMediumScreen(context) ? 32 : 64, vertical: 16),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -43,46 +43,46 @@ class _PurposeState extends State<Purpose> {
                             offset: Offset(0, 3),
                           ),
                         ],
-                        fontSize: ResponsiveWidget.isLargeScreen(context) ? 80 : 60,
+                        fontSize: ResponsiveWidget.isLargeScreen(context) ? 60 : 50,
                         color: Colors.white,
                         fontWeight: FontWeight.w800,
                       ),
                     ),
                     SizedBox(
-                      height: size.height * 0.1,
+                      height: size.height * 0.08,
                     ),
                     Text(
                       "Promoting awareness\namongst youth and parents",
                       style: GoogleFonts.gochiHand(
-                        fontSize: ResponsiveWidget.isLargeScreen(context) ? 45 : 25,
+                        fontSize: ResponsiveWidget.isLargeScreen(context) ? 28 : 18,
                         color: Colors.white,
                         fontWeight: FontWeight.normal,
                       ),
                     ),
                     SizedBox(
-                      height: size.height * 0.1,
+                      height: size.height * 0.05,
                     ),
                     Text(
                       "Creating a\nsafespace",
                       style: GoogleFonts.gochiHand(
-                        fontSize: ResponsiveWidget.isLargeScreen(context) ? 45 : 25,
+                        fontSize: ResponsiveWidget.isLargeScreen(context) ? 28 : 18,
                         color: Colors.white,
                         fontWeight: FontWeight.normal,
                       ),
                     ),
                     SizedBox(
-                      height: size.height * 0.1,
+                      height: size.height * 0.05,
                     ),
                     Text(
                       "Ensure mental\nwellbeing of people",
                       style: GoogleFonts.gochiHand(
-                        fontSize: ResponsiveWidget.isLargeScreen(context) ? 45 : 25,
+                        fontSize: ResponsiveWidget.isLargeScreen(context) ? 28 : 18,
                         color: Colors.white,
                         fontWeight: FontWeight.normal,
                       ),
                     ),
                     SizedBox(
-                      height: size.height * 0.1,
+                      height: size.height * 0.05,
                     ),
                   ],
                 ),
@@ -98,13 +98,13 @@ class _PurposeState extends State<Purpose> {
                             offset: Offset(0, 3),
                           ),
                         ],
-                        fontSize: ResponsiveWidget.isMediumScreen(context) ? 200 : 300,
+                        fontSize: ResponsiveWidget.isMediumScreen(context) ? 100 : 200,
                         fontWeight: FontWeight.w900,
                         color: Colors.white,
                       ),
                     ),
                     SizedBox(
-                      height: ResponsiveWidget.isMediumScreen(context) ? size.height * 0.1 : size.height * 0.06,
+                      height: ResponsiveWidget.isMediumScreen(context) ? size.height * 0.05 : size.height * 0.02,
                     ),
                     Container(
                       height: size.height * 0.5,
@@ -128,49 +128,49 @@ class _PurposeState extends State<Purpose> {
                             offset: Offset(0, 3),
                           ),
                         ],
-                        fontSize: ResponsiveWidget.isLargeScreen(context) ? 80 : 60,
+                        fontSize: ResponsiveWidget.isLargeScreen(context) ? 60 : 50,
                         color: Colors.white,
                         fontWeight: FontWeight.w800,
                       ),
                     ),
                     SizedBox(
-                      height: size.height * 0.1,
+                      height: size.height * 0.08,
                     ),
                     Text(
                       "Reduce stigma\naround mental health",
                       textAlign: TextAlign.end,
                       style: GoogleFonts.gochiHand(
-                        fontSize: ResponsiveWidget.isLargeScreen(context) ? 45 : 25,
+                        fontSize: ResponsiveWidget.isLargeScreen(context) ? 28 : 18,
                         color: Colors.white,
                         fontWeight: FontWeight.normal,
                       ),
                     ),
                     SizedBox(
-                      height: size.height * 0.1,
+                      height: size.height * 0.05,
                     ),
                     Text(
                       "Educate people\non mental health",
                       textAlign: TextAlign.end,
                       style: GoogleFonts.gochiHand(
-                        fontSize: ResponsiveWidget.isLargeScreen(context) ? 45 : 25,
+                        fontSize: ResponsiveWidget.isLargeScreen(context) ? 28 : 18,
                         color: Colors.white,
                         fontWeight: FontWeight.normal,
                       ),
                     ),
                     SizedBox(
-                      height: size.height * 0.1,
+                      height: size.height * 0.05,
                     ),
                     Text(
                       "Provide proper\nand reliable treatment",
                       textAlign: TextAlign.end,
                       style: GoogleFonts.gochiHand(
-                        fontSize: ResponsiveWidget.isLargeScreen(context) ? 45 : 25,
+                        fontSize: ResponsiveWidget.isLargeScreen(context) ? 28 : 18,
                         color: Colors.white,
                         fontWeight: FontWeight.normal,
                       ),
                     ),
                     SizedBox(
-                      height: size.height * 0.1,
+                      height: size.height * 0.05,
                     ),
                   ],
                 ),

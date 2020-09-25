@@ -131,14 +131,14 @@ class _LandingPageState extends State<LandingPage> {
                   'logo.gif',
                   fit: BoxFit.contain,
                   height: ResponsiveWidget.isMediumScreen(context)
-                      ? 150
+                      ? 120
                       : ResponsiveWidget.isLargeScreen(context)
-                          ? 200
+                          ? 170
                           : 0,
                   width: ResponsiveWidget.isMediumScreen(context)
-                      ? 150
+                      ? 120
                       : ResponsiveWidget.isLargeScreen(context)
-                          ? 200
+                          ? 170
                           : 0,
                 ),
               ),
@@ -161,7 +161,7 @@ class _LandingPageState extends State<LandingPage> {
           right: ResponsiveWidget.isMediumScreen(context)
               ? 16
               : ResponsiveWidget.isLargeScreen(context)
-                  ? 90
+                  ? 60
                   : 5),
       child: MaterialButton(
         onPressed: onPress,

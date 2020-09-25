@@ -31,9 +31,9 @@ class _EventFlowState extends State<EventFlow> {
                     color: huesYellow,
                     fontWeight: FontWeight.w800,
                     fontSize: ResponsiveWidget.isLargeScreen(context)
-                        ? 170
+                        ? 120
                         : ResponsiveWidget.isMediumScreen(context)
-                            ? 100
+                            ? 80
                             : 0),
               ),
             ),
@@ -46,14 +46,14 @@ class _EventFlowState extends State<EventFlow> {
                 color: huesYellow,
                 fontWeight: FontWeight.bold,
                 fontSize: ResponsiveWidget.isLargeScreen(context)
-                    ? 110
+                    ? 80
                     : ResponsiveWidget.isMediumScreen(context)
-                        ? 80
+                        ? 60
                         : 0,
               ),
             ),
             SizedBox(
-              width: ResponsiveWidget.isLargeScreen(context) ? size.width * 0.075 : size.width * 0.1,
+              width: ResponsiveWidget.isLargeScreen(context) ? size.width * 0.1 : 30,
             ),
             Column(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -84,7 +84,7 @@ class _EventFlowState extends State<EventFlow> {
                           children: [
                             Text(
                               'Day 1 (3PM-9PM)',
-                              style: GoogleFonts.barlow(fontWeight: FontWeight.bold, color: huesYellow, fontSize: ResponsiveWidget.isLargeScreen(context) ? 38 : 25),
+                              style: GoogleFonts.barlow(fontWeight: FontWeight.bold, color: huesYellow, fontSize: ResponsiveWidget.isLargeScreen(context) ? 33 : 25),
                             ),
                             SizedBox(
                               height: 30,
@@ -95,7 +95,7 @@ class _EventFlowState extends State<EventFlow> {
                               style: GoogleFonts.barlow(
                                 fontWeight: FontWeight.w500,
                                 color: Colors.black,
-                                fontSize: ResponsiveWidget.isLargeScreen(context) ? 24 : 18,
+                                fontSize: ResponsiveWidget.isLargeScreen(context) ? 20 : 12,
                               ),
                             ),
                           ],
@@ -127,7 +127,7 @@ class _EventFlowState extends State<EventFlow> {
                           children: [
                             Text(
                               'Day 2 (3PM-9PM)',
-                              style: GoogleFonts.barlow(fontWeight: FontWeight.bold, color: huesYellow, fontSize: ResponsiveWidget.isLargeScreen(context) ? 38 : 25),
+                              style: GoogleFonts.barlow(fontWeight: FontWeight.bold, color: huesYellow, fontSize: ResponsiveWidget.isLargeScreen(context) ? 33 : 25),
                             ),
                             SizedBox(
                               height: 30,
@@ -138,7 +138,7 @@ class _EventFlowState extends State<EventFlow> {
                               style: GoogleFonts.barlow(
                                 fontWeight: FontWeight.w500,
                                 color: Colors.black,
-                                fontSize: ResponsiveWidget.isLargeScreen(context) ? 24 : 18,
+                                fontSize: ResponsiveWidget.isLargeScreen(context) ? 20 : 12,
                               ),
                             ),
                           ],
@@ -169,12 +169,12 @@ class _EventFlowState extends State<EventFlow> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              "Other than that, there will be multiple contests, engaging activities, Live Art and Live Music throughout the span of two days!",
+                              "Other than that, there will be multiple contests, engaging activities, Live Art\nand Live Music throughout the span of two days!",
                               textAlign: TextAlign.justify,
                               style: GoogleFonts.barlow(
                                 fontWeight: FontWeight.w500,
                                 color: Colors.black,
-                                fontSize: ResponsiveWidget.isLargeScreen(context) ? 24 : 18,
+                                fontSize: ResponsiveWidget.isLargeScreen(context) ? 20 : 12,
                               ),
                             ),
                           ],

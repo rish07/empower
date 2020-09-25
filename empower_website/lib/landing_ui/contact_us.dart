@@ -43,7 +43,7 @@ class _ContactUsState extends State<ContactUs> {
                         ],
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
-                        fontSize: ResponsiveWidget.isLargeScreen(context) ? 70 : 40,
+                        fontSize: ResponsiveWidget.isLargeScreen(context) ? 50 : 30,
                       ),
                     ),
                     Column(
@@ -52,7 +52,7 @@ class _ContactUsState extends State<ContactUs> {
                           'Have any queries related to the event?',
                           style: GoogleFonts.barlow(
                             fontWeight: FontWeight.w600,
-                            fontSize: ResponsiveWidget.isLargeScreen(context) ? 30 : 20,
+                            fontSize: ResponsiveWidget.isLargeScreen(context) ? 24 : 14,
                             color: Colors.white,
                           ),
                         ),
@@ -60,7 +60,7 @@ class _ContactUsState extends State<ContactUs> {
                           "Drop us an email at the address below!",
                           style: GoogleFonts.barlow(
                             fontWeight: FontWeight.w600,
-                            fontSize: ResponsiveWidget.isLargeScreen(context) ? 30 : 20,
+                            fontSize: ResponsiveWidget.isLargeScreen(context) ? 24 : 14,
                             color: Colors.white,
                           ),
                         ),
@@ -76,12 +76,12 @@ class _ContactUsState extends State<ContactUs> {
                             Icon(
                               Icons.arrow_right_alt_outlined,
                               color: Colors.white,
-                              size: ResponsiveWidget.isMediumScreen(context) ? 40 : 60,
+                              size: ResponsiveWidget.isMediumScreen(context) ? 20 : 40,
                             ),
                             Text(
                               'huesofthemind@gmail.com',
                               style: GoogleFonts.gochiHand(
-                                fontSize: ResponsiveWidget.isLargeScreen(context) ? 40 : 25,
+                                fontSize: ResponsiveWidget.isLargeScreen(context) ? 30 : 15,
                                 color: Colors.white,
                               ),
                             ),
@@ -93,12 +93,12 @@ class _ContactUsState extends State<ContactUs> {
                             Icon(
                               Icons.arrow_right_alt_outlined,
                               color: Colors.white,
-                              size: ResponsiveWidget.isMediumScreen(context) ? 40 : 60,
+                              size: ResponsiveWidget.isMediumScreen(context) ? 20 : 40,
                             ),
                             Text(
                               'huesofthemind.pr@gmail.com',
                               style: GoogleFonts.gochiHand(
-                                fontSize: ResponsiveWidget.isLargeScreen(context) ? 40 : 25,
+                                fontSize: ResponsiveWidget.isLargeScreen(context) ? 30 : 15,
                                 color: Colors.white,
                               ),
                             ),
@@ -118,7 +118,7 @@ class _ContactUsState extends State<ContactUs> {
                         ],
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
-                        fontSize: ResponsiveWidget.isLargeScreen(context) ? 70 : 40,
+                        fontSize: ResponsiveWidget.isLargeScreen(context) ? 50 : 30,
                       ),
                     ),
                     Column(
@@ -130,8 +130,8 @@ class _ContactUsState extends State<ContactUs> {
                             children: [
                               Image.asset(
                                 'insta.png',
-                                height: ResponsiveWidget.isLargeScreen(context) ? 40 : 30,
-                                width: ResponsiveWidget.isLargeScreen(context) ? 40 : 30,
+                                height: ResponsiveWidget.isLargeScreen(context) ? 20 : 15,
+                                width: ResponsiveWidget.isLargeScreen(context) ? 20 : 15,
                                 color: Colors.white,
                               ),
                               SizedBox(
@@ -141,7 +141,7 @@ class _ContactUsState extends State<ContactUs> {
                                 'Instagram',
                                 style: GoogleFonts.gochiHand(
                                   color: Colors.white,
-                                  fontSize: ResponsiveWidget.isLargeScreen(context) ? 30 : 20,
+                                  fontSize: ResponsiveWidget.isLargeScreen(context) ? 20 : 10,
                                   fontWeight: FontWeight.w500,
                                 ),
                               ),
@@ -154,8 +154,8 @@ class _ContactUsState extends State<ContactUs> {
                             children: [
                               Image.asset(
                                 'insta.png',
-                                height: ResponsiveWidget.isLargeScreen(context) ? 40 : 30,
-                                width: ResponsiveWidget.isLargeScreen(context) ? 40 : 30,
+                                height: ResponsiveWidget.isLargeScreen(context) ? 20 : 15,
+                                width: ResponsiveWidget.isLargeScreen(context) ? 20 : 15,
                                 color: Colors.white,
                               ),
                               SizedBox(
@@ -165,7 +165,7 @@ class _ContactUsState extends State<ContactUs> {
                                 'Linkedin',
                                 style: GoogleFonts.gochiHand(
                                   color: Colors.white,
-                                  fontSize: ResponsiveWidget.isLargeScreen(context) ? 30 : 20,
+                                  fontSize: ResponsiveWidget.isLargeScreen(context) ? 20 : 10,
                                   fontWeight: FontWeight.w500,
                                 ),
                               ),
@@ -178,8 +178,8 @@ class _ContactUsState extends State<ContactUs> {
                             children: [
                               Image.asset(
                                 'insta.png',
-                                height: ResponsiveWidget.isLargeScreen(context) ? 40 : 30,
-                                width: ResponsiveWidget.isLargeScreen(context) ? 40 : 30,
+                                height: ResponsiveWidget.isLargeScreen(context) ? 20 : 15,
+                                width: ResponsiveWidget.isLargeScreen(context) ? 20 : 15,
                                 color: Colors.white,
                               ),
                               SizedBox(
@@ -189,7 +189,7 @@ class _ContactUsState extends State<ContactUs> {
                                 'Twitter',
                                 style: GoogleFonts.gochiHand(
                                   color: Colors.white,
-                                  fontSize: ResponsiveWidget.isLargeScreen(context) ? 30 : 20,
+                                  fontSize: ResponsiveWidget.isLargeScreen(context) ? 20 : 10,
                                   fontWeight: FontWeight.w500,
                                 ),
                               ),
@@ -202,8 +202,8 @@ class _ContactUsState extends State<ContactUs> {
                             children: [
                               Image.asset(
                                 'insta.png',
-                                height: ResponsiveWidget.isLargeScreen(context) ? 40 : 30,
-                                width: ResponsiveWidget.isLargeScreen(context) ? 40 : 30,
+                                height: ResponsiveWidget.isLargeScreen(context) ? 20 : 15,
+                                width: ResponsiveWidget.isLargeScreen(context) ? 20 : 15,
                                 color: Colors.white,
                               ),
                               SizedBox(
@@ -213,7 +213,7 @@ class _ContactUsState extends State<ContactUs> {
                                 'Facebook',
                                 style: GoogleFonts.gochiHand(
                                   color: Colors.white,
-                                  fontSize: ResponsiveWidget.isLargeScreen(context) ? 30 : 20,
+                                  fontSize: ResponsiveWidget.isLargeScreen(context) ? 20 : 10,
                                   fontWeight: FontWeight.w500,
                                 ),
                               ),
@@ -226,8 +226,8 @@ class _ContactUsState extends State<ContactUs> {
                             children: [
                               Image.asset(
                                 'insta.png',
-                                height: ResponsiveWidget.isLargeScreen(context) ? 40 : 30,
-                                width: ResponsiveWidget.isLargeScreen(context) ? 40 : 30,
+                                height: ResponsiveWidget.isLargeScreen(context) ? 20 : 15,
+                                width: ResponsiveWidget.isLargeScreen(context) ? 20 : 15,
                                 color: Colors.white,
                               ),
                               SizedBox(
@@ -237,7 +237,7 @@ class _ContactUsState extends State<ContactUs> {
                                 'Your Heart',
                                 style: GoogleFonts.gochiHand(
                                   color: Colors.white,
-                                  fontSize: ResponsiveWidget.isLargeScreen(context) ? 30 : 20,
+                                  fontSize: ResponsiveWidget.isLargeScreen(context) ? 20 : 10,
                                   fontWeight: FontWeight.w500,
                                 ),
                               ),

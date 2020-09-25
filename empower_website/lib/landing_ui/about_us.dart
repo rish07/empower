@@ -24,7 +24,7 @@ class _AboutUsState extends State<AboutUs> {
             textAlign: TextAlign.center,
             style: GoogleFonts.justAnotherHand(
               color: huesYellow,
-              fontSize: ResponsiveWidget.isLargeScreen(context) ? 150 : 100,
+              fontSize: ResponsiveWidget.isLargeScreen(context) ? 100 : 70,
             ),
           ),
           Row(
@@ -34,7 +34,7 @@ class _AboutUsState extends State<AboutUs> {
                   Text(
                     "There are a million hues of our minds- hues of happiness,\nmelancholy, joy, sorrow and many more. We provide a place\nfor people to share the various hues of the mind and in this\nprocess, share, learn, cope and heal together as a community.\n\nWe are a bridge connecting people in need with designated\nmental health professionals. We can call ourselves a Safe Space,\na platform for Self Help and a way to encourage Mental Health\nAwareness. We have collaborated with over 30+ organisations,\nMental Health professionals and mental health advocates to\nsupport the same cause.",
                     style: GoogleFonts.barlow(
-                      fontSize: ResponsiveWidget.isLargeScreen(context) ? 32 : 18,
+                      fontSize: ResponsiveWidget.isLargeScreen(context) ? 24 : 18,
                       fontWeight: FontWeight.w500,
                     ),
                   ),
@@ -45,7 +45,7 @@ class _AboutUsState extends State<AboutUs> {
           Text(
             "A place where people empower each other. We help people, help themselves!",
             style: GoogleFonts.gochiHand(
-              fontSize: ResponsiveWidget.isLargeScreen(context) ? 46 : 25,
+              fontSize: ResponsiveWidget.isLargeScreen(context) ? 26 : 12,
             ),
           ),
         ],
