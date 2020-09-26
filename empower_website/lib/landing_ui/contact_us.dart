@@ -121,7 +121,7 @@ class _ContactUsState extends State<ContactUs> {
                     Row(
                       children: [
                         Text(
-                          'FIND US AT',
+                          'FIND US HERE',
                           style: GoogleFonts.barlow(
                             shadows: [
                               Shadow(

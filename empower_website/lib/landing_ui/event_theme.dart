@@ -96,7 +96,7 @@ class _EventThemeState extends State<EventTheme> {
                       child: Container(
                         width: ResponsiveWidget.isLargeScreen(context) ? size.width * 0.4 : size.width * 0.3,
                         child: Text(
-                          "This year, the pandemic has caused extreme panic across people of all ages and cultures. With the rate at which it has spread to all parts of the world, the entirety of the world has been on the edge, withevery feeling ranging from isolation, to loneliness to anxiety, the phrase “Mental Health For All” couldn’t be more apt.",
+                          "This year, the pandemic has caused extreme panic across people of all ages and cultures. With the rate at which it has spread to all parts of the world, the entirety of the world has been on the edge, with every feeling ranging from isolation, to loneliness to anxiety, the phrase “Mental Health For All” could not be more apt. Now more than ever, we need to be more empathetic towards each other’s distresses & challenges.",
                           textAlign: TextAlign.justify,
                           style: GoogleFonts.barlow(
                             fontWeight: FontWeight.w500,
@@ -111,7 +111,7 @@ class _EventThemeState extends State<EventTheme> {
                       child: Container(
                         width: ResponsiveWidget.isLargeScreen(context) ? size.width * 0.4 : size.width * 0.3,
                         child: Text(
-                          "Seeing as to this situation, we decided to take matters into our own hands. Presenting to you our largest event till date, Empower. With a multitude of events ranging from panel discussions, live music, workshops, contest and many more engaging activities, we aim to complement the theme of 'Mental Health for All'. We hope to see you there!",
+                          "Seeing as to this situation, we decided to take matters into our own hands. Presenting to you our largest event till date, Empower. With a multitude of events ranging from panel discussions, live music, workshops, safe spaces and many more engaging activities, we aim to complement the theme of 'Mental Health for All'. We hope to see you there!",
                           textAlign: TextAlign.justify,
                           style: GoogleFonts.barlow(
                             fontWeight: FontWeight.w500,
