@@ -169,7 +169,7 @@ class _EventFlowState extends State<EventFlow> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              "Other than that, there will be multiple contests, engaging activities, Live Art\nand Live Music throughout the span of two days!",
+                              "Other than that, there will be multiple contest, engaging activities, Live Art\nand Live Music throughout the span of two days!",
                               textAlign: TextAlign.justify,
                               style: GoogleFonts.barlow(
                                 fontWeight: FontWeight.w500,

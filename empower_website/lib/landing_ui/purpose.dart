@@ -51,35 +51,71 @@ class _PurposeState extends State<Purpose> {
                     SizedBox(
                       height: size.height * 0.08,
                     ),
-                    Text(
-                      "Promoting awareness\namongst youth and parents",
-                      style: GoogleFonts.gochiHand(
-                        fontSize: ResponsiveWidget.isLargeScreen(context) ? 28 : 18,
-                        color: Colors.white,
-                        fontWeight: FontWeight.normal,
-                      ),
+                    Row(
+                      children: [
+                        Text(
+                          "Promoting awareness\namongst youth and parents",
+                          style: GoogleFonts.gochiHand(
+                            fontSize: ResponsiveWidget.isLargeScreen(context) ? 28 : 18,
+                            color: Colors.white,
+                            fontWeight: FontWeight.normal,
+                          ),
+                        ),
+                        SizedBox(
+                          width: ResponsiveWidget.isLargeScreen(context) ? 10 : 5,
+                        ),
+                        Image.asset(
+                          'busi.png',
+                          height: ResponsiveWidget.isLargeScreen(context) ? 80 : 40,
+                          width: ResponsiveWidget.isLargeScreen(context) ? 80 : 40,
+                        ),
+                      ],
                     ),
                     SizedBox(
                       height: size.height * 0.05,
                     ),
-                    Text(
-                      "Creating a\nsafespace",
-                      style: GoogleFonts.gochiHand(
-                        fontSize: ResponsiveWidget.isLargeScreen(context) ? 28 : 18,
-                        color: Colors.white,
-                        fontWeight: FontWeight.normal,
-                      ),
+                    Row(
+                      children: [
+                        Text(
+                          "Creating a\nsafespace",
+                          style: GoogleFonts.gochiHand(
+                            fontSize: ResponsiveWidget.isLargeScreen(context) ? 28 : 18,
+                            color: Colors.white,
+                            fontWeight: FontWeight.normal,
+                          ),
+                        ),
+                        SizedBox(
+                          width: ResponsiveWidget.isLargeScreen(context) ? 10 : 5,
+                        ),
+                        Image.asset(
+                          'spa.png',
+                          height: ResponsiveWidget.isLargeScreen(context) ? 80 : 40,
+                          width: ResponsiveWidget.isLargeScreen(context) ? 80 : 40,
+                        ),
+                      ],
                     ),
                     SizedBox(
                       height: size.height * 0.05,
                     ),
-                    Text(
-                      "Ensure mental\nwellbeing of people",
-                      style: GoogleFonts.gochiHand(
-                        fontSize: ResponsiveWidget.isLargeScreen(context) ? 28 : 18,
-                        color: Colors.white,
-                        fontWeight: FontWeight.normal,
-                      ),
+                    Row(
+                      children: [
+                        Text(
+                          "Ensure mental\nwellbeing of people",
+                          style: GoogleFonts.gochiHand(
+                            fontSize: ResponsiveWidget.isLargeScreen(context) ? 28 : 18,
+                            color: Colors.white,
+                            fontWeight: FontWeight.normal,
+                          ),
+                        ),
+                        SizedBox(
+                          width: ResponsiveWidget.isLargeScreen(context) ? 10 : 5,
+                        ),
+                        Image.asset(
+                          'brain.png',
+                          height: ResponsiveWidget.isLargeScreen(context) ? 80 : 40,
+                          width: ResponsiveWidget.isLargeScreen(context) ? 80 : 40,
+                        ),
+                      ],
                     ),
                     SizedBox(
                       height: size.height * 0.05,
@@ -136,38 +172,74 @@ class _PurposeState extends State<Purpose> {
                     SizedBox(
                       height: size.height * 0.08,
                     ),
-                    Text(
-                      "Reduce stigma\naround mental health",
-                      textAlign: TextAlign.end,
-                      style: GoogleFonts.gochiHand(
-                        fontSize: ResponsiveWidget.isLargeScreen(context) ? 28 : 18,
-                        color: Colors.white,
-                        fontWeight: FontWeight.normal,
-                      ),
+                    Row(
+                      children: [
+                        Image.asset(
+                          'flower.png',
+                          height: ResponsiveWidget.isLargeScreen(context) ? 80 : 40,
+                          width: ResponsiveWidget.isLargeScreen(context) ? 80 : 40,
+                        ),
+                        SizedBox(
+                          width: ResponsiveWidget.isLargeScreen(context) ? 10 : 5,
+                        ),
+                        Text(
+                          "Reduce stigma\naround mental health",
+                          textAlign: TextAlign.end,
+                          style: GoogleFonts.gochiHand(
+                            fontSize: ResponsiveWidget.isLargeScreen(context) ? 28 : 18,
+                            color: Colors.white,
+                            fontWeight: FontWeight.normal,
+                          ),
+                        ),
+                      ],
                     ),
                     SizedBox(
                       height: size.height * 0.05,
                     ),
-                    Text(
-                      "Educate people\non mental health",
-                      textAlign: TextAlign.end,
-                      style: GoogleFonts.gochiHand(
-                        fontSize: ResponsiveWidget.isLargeScreen(context) ? 28 : 18,
-                        color: Colors.white,
-                        fontWeight: FontWeight.normal,
-                      ),
+                    Row(
+                      children: [
+                        Image.asset(
+                          'book.png',
+                          height: ResponsiveWidget.isLargeScreen(context) ? 80 : 40,
+                          width: ResponsiveWidget.isLargeScreen(context) ? 80 : 40,
+                        ),
+                        SizedBox(
+                          width: ResponsiveWidget.isLargeScreen(context) ? 10 : 5,
+                        ),
+                        Text(
+                          "Educate people\non mental health",
+                          textAlign: TextAlign.end,
+                          style: GoogleFonts.gochiHand(
+                            fontSize: ResponsiveWidget.isLargeScreen(context) ? 28 : 18,
+                            color: Colors.white,
+                            fontWeight: FontWeight.normal,
+                          ),
+                        ),
+                      ],
                     ),
                     SizedBox(
                       height: size.height * 0.05,
                     ),
-                    Text(
-                      "Provide proper\nand reliable treatment",
-                      textAlign: TextAlign.end,
-                      style: GoogleFonts.gochiHand(
-                        fontSize: ResponsiveWidget.isLargeScreen(context) ? 28 : 18,
-                        color: Colors.white,
-                        fontWeight: FontWeight.normal,
-                      ),
+                    Row(
+                      children: [
+                        Image.asset(
+                          'doc.png',
+                          height: ResponsiveWidget.isLargeScreen(context) ? 80 : 40,
+                          width: ResponsiveWidget.isLargeScreen(context) ? 80 : 40,
+                        ),
+                        SizedBox(
+                          width: ResponsiveWidget.isLargeScreen(context) ? 10 : 5,
+                        ),
+                        Text(
+                          "Provide proper\nand reliable treatment",
+                          textAlign: TextAlign.end,
+                          style: GoogleFonts.gochiHand(
+                            fontSize: ResponsiveWidget.isLargeScreen(context) ? 28 : 18,
+                            color: Colors.white,
+                            fontWeight: FontWeight.normal,
+                          ),
+                        ),
+                      ],
                     ),
                     SizedBox(
                       height: size.height * 0.05,

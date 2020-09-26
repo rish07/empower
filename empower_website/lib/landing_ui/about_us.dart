@@ -29,17 +29,34 @@ class _AboutUsState extends State<AboutUs> {
           ),
           Row(
             children: [
-              Column(
-                children: [
-                  Text(
-                    "There are a million hues of our minds- hues of happiness,\nmelancholy, joy, sorrow and many more. We provide a place\nfor people to share the various hues of the mind and in this\nprocess, share, learn, cope and heal together as a community.\n\nWe are a bridge connecting people in need with designated\nmental health professionals. We can call ourselves a Safe Space,\na platform for Self Help and a way to encourage Mental Health\nAwareness. We have collaborated with over 30+ organisations,\nMental Health professionals and mental health advocates to\nsupport the same cause.",
-                    style: GoogleFonts.barlow(
-                      fontSize: ResponsiveWidget.isLargeScreen(context) ? 24 : 18,
-                      fontWeight: FontWeight.w500,
-                    ),
+              Expanded(
+                flex: 2,
+                child: Container(
+                  child: Column(
+                    children: [
+                      Text(
+                        "There are a million hues of our minds- hues of happiness, melancholy, joy, sorrow and many more. We provide a place for people to share the various hues of the mind and in this process, share, learn, cope and heal together as a community.\n\nWe are a bridge connecting people in need with designated mental health professionals. We can call ourselves a Safe Space, a platform for Self Help and a way to encourage Mental Health Awareness. We have collaborated with over 30+ organisations Mental Health professionals and mental health advocates to support the same cause.",
+                        textAlign: TextAlign.justify,
+                        style: GoogleFonts.barlow(
+                          fontSize: ResponsiveWidget.isLargeScreen(context) ? 20 : 18,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                    ],
                   ),
-                ],
+                ),
               ),
+              Expanded(
+                flex: 3,
+                child: Container(
+                  height: ResponsiveWidget.isLargeScreen(context) ? 400 : 250,
+                  width: ResponsiveWidget.isLargeScreen(context) ? 400 : 250,
+                  child: Image.asset(
+                    'guy.png',
+                    fit: BoxFit.contain,
+                  ),
+                ),
+              )
             ],
           ),
           Text(

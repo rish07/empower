@@ -31,20 +31,32 @@ class _ContactUsState extends State<ContactUs> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      'GET IN TOUCH',
-                      style: GoogleFonts.barlow(
-                        shadows: [
-                          Shadow(
-                            blurRadius: 6,
-                            color: Colors.black12,
-                            offset: Offset(0, 3),
+                    Row(
+                      children: [
+                        Text(
+                          'GET IN TOUCH',
+                          style: GoogleFonts.barlow(
+                            shadows: [
+                              Shadow(
+                                blurRadius: 6,
+                                color: Colors.black12,
+                                offset: Offset(0, 3),
+                              ),
+                            ],
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: ResponsiveWidget.isLargeScreen(context) ? 50 : 30,
                           ),
-                        ],
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                        fontSize: ResponsiveWidget.isLargeScreen(context) ? 50 : 30,
-                      ),
+                        ),
+                        SizedBox(
+                          width: ResponsiveWidget.isLargeScreen(context) ? 10 : 5,
+                        ),
+                        Image.asset(
+                          'email.png',
+                          height: ResponsiveWidget.isMediumScreen(context) ? 40 : 60,
+                          width: ResponsiveWidget.isMediumScreen(context) ? 40 : 60,
+                        ),
+                      ],
                     ),
                     Column(
                       children: [
@@ -106,20 +118,32 @@ class _ContactUsState extends State<ContactUs> {
                         ),
                       ],
                     ),
-                    Text(
-                      'FIND US AT',
-                      style: GoogleFonts.barlow(
-                        shadows: [
-                          Shadow(
-                            blurRadius: 6,
-                            color: Colors.black12,
-                            offset: Offset(0, 3),
+                    Row(
+                      children: [
+                        Text(
+                          'FIND US AT',
+                          style: GoogleFonts.barlow(
+                            shadows: [
+                              Shadow(
+                                blurRadius: 6,
+                                color: Colors.black12,
+                                offset: Offset(0, 3),
+                              ),
+                            ],
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: ResponsiveWidget.isLargeScreen(context) ? 50 : 30,
                           ),
-                        ],
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                        fontSize: ResponsiveWidget.isLargeScreen(context) ? 50 : 30,
-                      ),
+                        ),
+                        SizedBox(
+                          width: ResponsiveWidget.isLargeScreen(context) ? 10 : 5,
+                        ),
+                        Image.asset(
+                          'find.png',
+                          height: ResponsiveWidget.isMediumScreen(context) ? 35 : 60,
+                          width: ResponsiveWidget.isMediumScreen(context) ? 35 : 60,
+                        ),
+                      ],
                     ),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -129,7 +153,7 @@ class _ContactUsState extends State<ContactUs> {
                           child: Row(
                             children: [
                               Image.asset(
-                                'insta.png',
+                                'insta_white.png',
                                 height: ResponsiveWidget.isLargeScreen(context) ? 20 : 15,
                                 width: ResponsiveWidget.isLargeScreen(context) ? 20 : 15,
                                 color: Colors.white,
@@ -153,7 +177,7 @@ class _ContactUsState extends State<ContactUs> {
                           child: Row(
                             children: [
                               Image.asset(
-                                'insta.png',
+                                'link_white.png',
                                 height: ResponsiveWidget.isLargeScreen(context) ? 20 : 15,
                                 width: ResponsiveWidget.isLargeScreen(context) ? 20 : 15,
                                 color: Colors.white,
@@ -177,7 +201,7 @@ class _ContactUsState extends State<ContactUs> {
                           child: Row(
                             children: [
                               Image.asset(
-                                'insta.png',
+                                'twitter_white.png',
                                 height: ResponsiveWidget.isLargeScreen(context) ? 20 : 15,
                                 width: ResponsiveWidget.isLargeScreen(context) ? 20 : 15,
                                 color: Colors.white,
@@ -201,7 +225,7 @@ class _ContactUsState extends State<ContactUs> {
                           child: Row(
                             children: [
                               Image.asset(
-                                'insta.png',
+                                'face.png',
                                 height: ResponsiveWidget.isLargeScreen(context) ? 20 : 15,
                                 width: ResponsiveWidget.isLargeScreen(context) ? 20 : 15,
                                 color: Colors.white,
@@ -225,7 +249,7 @@ class _ContactUsState extends State<ContactUs> {
                           child: Row(
                             children: [
                               Image.asset(
-                                'insta.png',
+                                'heart.png',
                                 height: ResponsiveWidget.isLargeScreen(context) ? 20 : 15,
                                 width: ResponsiveWidget.isLargeScreen(context) ? 20 : 15,
                                 color: Colors.white,
@@ -248,8 +272,13 @@ class _ContactUsState extends State<ContactUs> {
                     )
                   ],
                 ),
+                SizedBox(
+                  width: size.width * 0.2,
+                ),
                 Container(
-                  width: size.width * 0.5,
+                  width: size.width * 0.4,
+                  child: Image.asset('box.png'),
+                  height: size.height * 0.5,
                 )
               ],
             ),

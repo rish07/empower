@@ -138,8 +138,8 @@ class _HomePageState extends State<HomePage> {
                           onTap: () {},
                           child: Container(
                             padding: EdgeInsets.all(8),
-                            height: 43,
-                            width: 43,
+                            height: ResponsiveWidget.isMediumScreen(context) ? 43 : 52,
+                            width: ResponsiveWidget.isMediumScreen(context) ? 43 : 52,
                             child: Image.asset('web/assets/insta.png'),
                           ),
                         ),
@@ -147,8 +147,8 @@ class _HomePageState extends State<HomePage> {
                           onTap: () {},
                           child: Container(
                             padding: EdgeInsets.all(8),
-                            height: 43,
-                            width: 43,
+                            height: ResponsiveWidget.isMediumScreen(context) ? 43 : 52,
+                            width: ResponsiveWidget.isMediumScreen(context) ? 43 : 52,
                             child: Image.asset('web/assets/link.png'),
                           ),
                         ),
@@ -156,8 +156,8 @@ class _HomePageState extends State<HomePage> {
                           onTap: () {},
                           child: Container(
                             padding: EdgeInsets.all(8),
-                            height: 43,
-                            width: 43,
+                            height: ResponsiveWidget.isMediumScreen(context) ? 43 : 52,
+                            width: ResponsiveWidget.isMediumScreen(context) ? 43 : 52,
                             child: Image.asset('web/assets/twitter.png'),
                           ),
                         ),
