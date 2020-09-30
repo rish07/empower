@@ -90,7 +90,7 @@ class _EventFlowState extends State<EventFlow> {
                               height: 30,
                             ),
                             Text(
-                              "Workshop: Building Healthy Social Relationships (3 PM - 4 PM)\nExpressive Arts Workshop for Stress Management (5 PM - 6 PM)\n\nMental Health for all, all for Mental Health- a space for discussions,\nperformances and activities for our mental health and well being. (7 PM - 9 PM)",
+                              "Workshop: Building Healthy Social Relationships (3 PM - 4 PM)\nExperience based activity for Stress Management (5 PM - 6 PM)\n\nMental Health for all, all for Mental Health- a space for discussions,\nperformances and activities for our mental health and well being. (7 PM - 9 PM)",
                               textAlign: TextAlign.justify,
                               style: GoogleFonts.barlow(
                                 fontWeight: FontWeight.w500,

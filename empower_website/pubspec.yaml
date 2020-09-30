@@ -32,6 +32,7 @@ dependencies:
   auto_size_text: ^2.1.0
   scroll_to_index: ^1.0.6
   timeline_tile: ^1.0.0
+  url_launcher: ^5.7.2
 
 
 dev_dependencies:

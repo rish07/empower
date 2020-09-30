@@ -4,7 +4,19 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6db9fb52-9826-40e0-b5f6-d789e4427f77" name="Default Changelist" comment="" />
+    <list default="true" id="6db9fb52-9826-40e0-b5f6-d789e4427f77" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/empower_website/lib/landing_ui/contact_us.dart" beforeDir="false" afterPath="$PROJECT_DIR$/empower_website/lib/landing_ui/contact_us.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/empower_website/lib/landing_ui/event_flow_phone1.dart" beforeDir="false" afterPath="$PROJECT_DIR$/empower_website/lib/landing_ui/event_flow_phone1.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/empower_website/lib/landing_ui/event_flow_phone2.dart" beforeDir="false" afterPath="$PROJECT_DIR$/empower_website/lib/landing_ui/event_flow_phone2.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/empower_website/lib/landing_ui/event_theme_phone1.dart" beforeDir="false" afterPath="$PROJECT_DIR$/empower_website/lib/landing_ui/event_theme_phone1.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/empower_website/lib/landing_ui/event_theme_phone2.dart" beforeDir="false" afterPath="$PROJECT_DIR$/empower_website/lib/landing_ui/event_theme_phone2.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/empower_website/lib/landing_ui/home_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/empower_website/lib/landing_ui/home_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/empower_website/lib/landing_ui/purpose_phone1.dart" beforeDir="false" afterPath="$PROJECT_DIR$/empower_website/lib/landing_ui/purpose_phone1.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/empower_website/lib/landing_ui/purpose_phone2.dart" beforeDir="false" afterPath="$PROJECT_DIR$/empower_website/lib/landing_ui/purpose_phone2.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/empower_website/web/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/empower_website/web/favicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/empower_website/web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/empower_website/web/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +28,9 @@
         <option value="Dart File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1hxL9zEgxCm8nqbGHuLTd5mNCG9" />
   <component name="ProjectViewState">
@@ -50,10 +65,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="743" y="311" width="424" height="482" key="FileChooserDialogImpl" timestamp="1600953394339">
+    <state x="743" y="311" width="424" height="482" key="FileChooserDialogImpl" timestamp="1601402610856">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="743" y="311" width="424" height="482" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1600953394339" />
+    <state x="743" y="311" width="424" height="482" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1601402610856" />
     <state width="939" height="345" key="GridCell.Tab.0.bottom" timestamp="1600953338262">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
