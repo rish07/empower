@@ -1,5 +1,9 @@
 import 'package:empower/landing_ui/about_us.dart';
 import 'package:empower/landing_ui/about_us_phone1.dart';
+
+import 'package:empower/landing_ui/collaborations.dart';
+import 'package:empower/landing_ui/collaborations_partners.dart';
+
 import 'package:empower/landing_ui/contact_us.dart';
 import 'package:empower/landing_ui/event_flow.dart';
 import 'package:empower/landing_ui/event_flow_phone1.dart';
@@ -130,13 +134,32 @@ class _LandingPageState extends State<LandingPage> {
                           ),
                           buildAppBarMenu(
                             context,
+
+                            title: 'COLLABORATIONS',
+                            onPress: () async {
+                              setState(() {
+                                index = 3;
+                              });
+                              await controller.animateToPage(
+                                5,
+                                duration: Duration(milliseconds: 500),
+                                curve: Curves.easeInSine,
+                              );
+                            },
+                            number: 3,
+                          ),
+                          buildAppBarMenu(
+                            context,
+
                             title: 'CONTACT US',
                             onPress: () async {
                               setState(() {
                                 index = 4;
                               });
                               await controller.animateToPage(
-                                5,
+
+                                7,
+
                                 duration: Duration(milliseconds: 500),
                                 curve: Curves.easeInSine,
                               );
@@ -173,6 +196,10 @@ class _LandingPageState extends State<LandingPage> {
                   EventFlow(),
                   Purpose(),
                   AboutUs(),
+
+                  Collaborations(),
+                  CollaborationPartners(),
+
                   ContactUs(),
                 ]
               : [
